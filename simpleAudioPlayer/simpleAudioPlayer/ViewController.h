@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) SimpleAudioPlayer *simpleAudioPlayer;
 
-- (IBAction)play:(id)sender;
+- (IBAction)play:(id) sender;
 
 @end
 

@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _simpleAudioPlayer = [[SimpleAudioPlayer alloc] init];
+    [[SimpleAudioPlayer sharedInstance] preloadAudioSample:@"switch"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +29,7 @@
 
 - (IBAction)play:(id)sender
 {
-    [self.simpleAudioPlayer playSound];
+    [[SimpleAudioPlayer sharedInstance] playAudioSample:@"switch"];
 }
 
 @end

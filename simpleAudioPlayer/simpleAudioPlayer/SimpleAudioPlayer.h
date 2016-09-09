@@ -14,6 +14,16 @@
 
 @interface SimpleAudioPlayer : NSObject
 
--(void) playSound;
++ (SimpleAudioPlayer*) sharedInstance;
+
+-(void) preloadAudioSample:(NSString *)sampleName;
+
+-(void) playAudioSample:(NSString *)sampleName;
+
+-(void) playAudioSample:(NSString *)sampleName gain:(float)gain;
+
+-(void) playAudioSample:(NSString *)sampleName gain:(float)gain pitch:(float)pitch;
+
+-(void) shutdownAudioSamplePlayer;
 
 @end
