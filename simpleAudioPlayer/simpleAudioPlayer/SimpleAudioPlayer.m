@@ -117,6 +117,8 @@ void AudioInterruptionListenerCallback(void* user_data, UInt32 interruption_stat
     if (0 != readBytesResult)
     {
         NSLog(@"An error occurred when attempting to read data from audio file %@: %ld", audioFilePath, readBytesResult);
+    } else {
+        NSLog(@"Loading file %@:", sampleName);
     }
     
     AudioFileClose(afid);
@@ -178,6 +180,7 @@ void AudioInterruptionListenerCallback(void* user_data, UInt32 interruption_stat
     alSourcei(source, AL_BUFFER, outputBuffer);
     
     alSourcePlay(source);
+    NSLog(@"PLAY!!!");
 }
 
 - (ALuint) getNextAvailableSource
