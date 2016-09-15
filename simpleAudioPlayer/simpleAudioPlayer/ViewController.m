@@ -22,10 +22,13 @@ NSArray *filePaths = nil;
     // Do any additional setup after loading the view, typically from a nib.
     filePaths = [NSArray arrayWithObjects:
      @"switch",
-     @"ting",
+     @"tick",
      nil];
     
-    [[SimpleAudioPlayer sharedInstance] preloadAudioSample:filePaths[0]];
+    for(int i = 0; i<[filePaths count];i++){
+        NSString *path = filePaths[i];
+        [[SimpleAudioPlayer sharedInstance] preloadAudioSample:path];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,9 +37,14 @@ NSArray *filePaths = nil;
 }
 
 
-- (IBAction)play:(id)sender
+- (IBAction)play1:(id)sender
 {
-    [[SimpleAudioPlayer sharedInstance] playAudioSample:filePaths[0]];
+    [[SimpleAudioPlayer sharedInstance] playAudioSample:@"switch"];
+}
+
+- (IBAction)play2:(id)sender
+{
+    [[SimpleAudioPlayer sharedInstance] playAudioSample:@"tick"];
 }
 
 @end

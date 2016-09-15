@@ -167,8 +167,8 @@ void AudioInterruptionListenerCallback(void* user_data, UInt32 interruption_stat
         return;
     }
     
-    /* Get a reference to the audio file. Note: we are only dealing with .caf files. */
-    NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:sampleName ofType:@"caf"];
+    /* Get a reference to the audio file. Note: we are only dealing with .wav files. */
+    NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:sampleName ofType:@"wav"];
     
     /* Open the audio file */
     AudioFileID afid = [self openAudioFile:audioFilePath];
