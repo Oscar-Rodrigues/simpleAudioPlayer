@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6C131E11D8AF1A900F8B3DE /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = B6C131E01D8AF1A900F8B3DE /* tick.wav */; };
 		B6EC22721D81A4080001D13F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC22711D81A4080001D13F /* main.m */; };
 		B6EC22751D81A4080001D13F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC22741D81A4080001D13F /* AppDelegate.m */; };
 		B6EC22781D81A4080001D13F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC22771D81A4080001D13F /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6C131E01D8AF1A900F8B3DE /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
 		B6EC226D1D81A4080001D13F /* simpleAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EC22711D81A4080001D13F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6EC22731D81A4080001D13F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B6EC22A61D81A9900001D13F /* switch.wav */,
+				B6C131E01D8AF1A900F8B3DE /* tick.wav */,
 				B6EC22A31D81A4520001D13F /* SimpleAudioPlayer.h */,
 				B6EC22A41D81A4520001D13F /* SimpleAudioPlayer.m */,
 				B6EC22731D81A4080001D13F /* AppDelegate.h */,
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C131E11D8AF1A900F8B3DE /* tick.wav in Resources */,
 				B6EC22A71D81A9900001D13F /* switch.wav in Resources */,
 				B6EC22801D81A4080001D13F /* LaunchScreen.storyboard in Resources */,
 				B6EC227D1D81A4080001D13F /* Assets.xcassets in Resources */,
@@ -508,6 +512,7 @@
 				B6EC229C1D81A4090001D13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6EC229D1D81A4090001D13F /* Build configuration list for PBXNativeTarget "simpleAudioPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +521,7 @@
 				B6EC229F1D81A4090001D13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6EC22A01D81A4090001D13F /* Build configuration list for PBXNativeTarget "simpleAudioPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +530,7 @@
 				B6EC22A21D81A4090001D13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
